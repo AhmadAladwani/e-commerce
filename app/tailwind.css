@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-purple-400;
+  }
+  
+  label {
+    @apply block;
+  }
+
+  input {
+    @apply p-2;
+  }
+
+  /* .error {
+    @apply text-red-900 font-bold;
+  } */
+
+  a {
+    @apply hover:underline hover:text-white;
+  }
+
+  h1 {
+    @apply text-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg font-bold;
+  }
+
+  span {
+    @apply underline italic font-bold;
+  }
+
+  @layer components {
+    .error {
+      @apply text-red-900 font-bold;
+    }
+  }
+}
